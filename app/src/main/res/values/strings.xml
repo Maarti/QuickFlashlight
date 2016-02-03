@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quick Flashlight</string>
+    <string name="permdesc_flashlight">If your device has a flashlight, the app will turn it on.</string>
+</resources>
