@@ -8,10 +8,46 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="net.maarti.quickflashlight.MainActivity">
+    tools:context="net.maarti.quickflashlight.MainActivity"
+    android:background="@color/white">
 
     <TextView
-        android:text="Hello World!"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:textColor="@color/lightgrey"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="onClickAppTitle"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flashlight"
+        android:id="@+id/switchFlash"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:checked="true"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whiteScreen"
+        android:id="@+id/switchWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/switchFlash"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/createdByMaarti"
+        android:textColor="@color/lightgrey"
+        android:onClick="onClickAuthor"/>
+
+
 </RelativeLayout>
