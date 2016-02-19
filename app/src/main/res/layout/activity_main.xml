@@ -28,14 +28,16 @@
         android:id="@+id/switchFlash"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:checked="true"/>
+        android:checked="true"
+        android:layout_marginBottom="10dp"/>
 
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/whiteScreen"
         android:id="@+id/switchWhite"
-        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/switchFlash"
+        android:layout_alignEnd="@+id/switchFlash"
         android:layout_below="@id/switchFlash"
         android:checked="true"/>
 

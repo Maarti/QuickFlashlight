@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             vSwitchFlash.setChecked(false);
-            Toast.makeText(getBaseContext(), R.string.toast_exceptionFlashOn, Toast.LENGTH_SHORT).show();
+           // Toast.makeText(getBaseContext(), R.string.toast_exceptionFlashOn, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
             //vSwitchFlash.setChecked(true);
-            Toast.makeText(getBaseContext(), R.string.toast_exceptionFlashOff, Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(getBaseContext(), R.string.toast_exceptionFlashOff, Toast.LENGTH_SHORT).show();
         }
     }
 

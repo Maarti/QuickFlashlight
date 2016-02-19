@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lampe torche rapide</string>
+    <string name="createdByMaarti">Créée par Maarti</string>
+    <string name="flashlight">Flash</string>
+    <string name="permdesc_flashlight">Si votre appareil à un flash, l\'application l\'allumera.</string>
+    <string name="toast_exceptionFlashOff">Erreur lors de l\'éteignage du flash.</string>
+    <string name="toast_exceptionFlashOn">Erreur lors de l\'allumage du flash.</string>
+    <string name="toast_rate_app">Merci de noter cette application :)</string>
+    <string name="whiteScreen">Luminosité</string>
+</resources>

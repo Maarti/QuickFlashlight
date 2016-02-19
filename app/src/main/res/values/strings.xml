@@ -2,9 +2,9 @@
     <string name="app_name">Quick Flashlight</string>
     <string name="permdesc_flashlight">If your device has a flashlight, the app will turn it on.</string>
     <string name="flashlight">Flashlight</string>
-    <string name="whiteScreen">White screen</string>
+    <string name="whiteScreen">Brightness</string>
     <string name="createdByMaarti">Created by Maarti</string>
-    <string name="appWebSiteUrl">http://android.maarti.net</string>
+    <string name="appWebSiteUrl" translatable="false">http://android.maarti.net</string>
     <string name="toast_rate_app">Thank you to rate this app :)</string>
     <string name="toast_exceptionFlashOn">Exception throws in turning on flashlight.</string>
     <string name="toast_exceptionFlashOff">Exception throws in turning off flashlight.</string>
