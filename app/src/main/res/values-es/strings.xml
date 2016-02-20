@@ -4,8 +4,9 @@
     <string name="createdByMaarti">Creado por Maarti</string>
     <string name="flashlight">Flash</string>
     <string name="permdesc_flashlight">Si el dispositivo tiene un flash, la aplicación va a encenderlo.</string>
-    <string name="toast_exceptionFlashOff">Error en apagar el flash.</string>
-    <string name="toast_exceptionFlashOn">Error en encender el flash. </string>
+    <!--<string name="toast_exceptionFlashOff">Error en apagar el flash.</string>
+    <string name="toast_exceptionFlashOn">Error en encender el flash. </string>-->
     <string name="toast_rate_app">Gracias a darle una calificación a esta aplicación :)</string>
     <string name="whiteScreen">Brillo</string>
+    <string name="version">Versión %1$s</string>
 </resources>

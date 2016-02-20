@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Torcia rapida</string>
+    <string name="createdByMaarti">Creato da Maarti</string>
+    <string name="flashlight">Flash</string>
+    <string name="permdesc_flashlight">Se il dispositivo dispone di un flash, l\'applicazione accenderlo.</string>
+    <string name="toast_rate_app">Grazie a votare questa applicazione :)</string>
+    <string name="whiteScreen">Luminosità</string>
+    <string name="version">Versione %1$s</string>
+</resources>

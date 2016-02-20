@@ -16,6 +16,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,13 +51,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked)
-                    setWhiteScreen();
+                    setMaxBrightness();
                 else
-                    setDefaultScreen();
+                    setDefaultBrightness();
             }
         });
 
         initBrightness();
+
+        // On écrit le numéro de version de l'app
+        String version = null;
+        try {
+            version = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        if (version!=null)
+            ((TextView) findViewById(R.id.textViewAppVersion)).setText(getResources().getString(R.string.version,version));
     }
 
 
@@ -123,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setWhiteScreen() {
         setMaxBrightness();
+
     }
 
     private void initBrightness(){
@@ -157,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
         //Apply attribute changes to this window
         window.setAttributes(layoutpars);
         vSwitchWhite.setChecked(true);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     private void setDefaultBrightness(){
@@ -170,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
         //Apply attribute changes to this window
         window.setAttributes(layoutpars);
         vSwitchWhite.setChecked(false);
+        getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
 
