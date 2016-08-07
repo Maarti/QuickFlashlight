@@ -22,11 +22,12 @@ Just tap the icon of the app :)
 
 ## History
 
-
+The project started from a personal need. Being able to light up from one’s smartphone as quickly as possible. To make this possible, I decided that a single click would be enough, that there would be no overloaded GUI, no loading screen, no advertisements (= no internet connection), just the necessary.
 
 ## Credits
 
-
+[Maarti](http://maarti.net)
 
 ## License
 
+Apache License 2.0
